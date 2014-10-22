@@ -8,7 +8,9 @@ Based on [hazemhagrass/push-parse](https://github.com/hazemhagrass/push-parse) a
 
 ## Installation
 
-TODO
+```
+cordova plugin add https://github.com/soundasleep/cordova-parse-push
+```
 
 ## Methods
 
@@ -33,13 +35,15 @@ parsePush.getPushListeners(function(callbacks), function(error))
 // "callbacks" is a JSON object with "callback_name": callback
 
 parsePush.sendPushInBackground("channel", data, function(success), function(error))
-// "data" is a JSON object with "alert", "expirationTime", "expirationTimeInterval", "message" and any other extra data
+// "data" is a JSON object with "alert", "expirationTime", "expirationTimeInterval", "message" 
+and any other extra data
 
 // TODO what do these methods do?
 parsePush.getInstallationId(function(id))
 ```
 
-NOTE: `sendPushInBackground()` requires the unsafe _Client Push Enabled_ setting in the _Push Notifications_ settings of your Parse app: see [Sending Pushes](https://www.parse.com/docs/push_guide#top/Android)
+NOTE: `sendPushInBackground()` requires the unsafe _Client Push Enabled_ setting in the 
+_Push Notifications_ settings of your Parse app: see [Sending Pushes](https://www.parse.com/docs/push_guide#top/Android)
  
 ## Building
 
@@ -48,3 +52,9 @@ TODO
 ## Testing
 
 TODO
+
+## Developing
+
+The Cordova SDK is available by downloading the latest Cordova Android platform SDK and importing the 
+`framework` directory as an Eclipse project. Add this as a build dependency to this plugin project.
+
