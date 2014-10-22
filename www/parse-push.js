@@ -8,6 +8,6 @@ var parsePushPlugin = {
 			[appId, clientKey]
 		);
 	}
-}
+};
 
 module.exports = parsePushPlugin;
