@@ -5,7 +5,7 @@
 	<name>cordova-parse-push</name>
 	<description>Cordova Parse Push notifications plugin</description>
 	
-	<js-module src="www/parse-push.js" name="ParsePush">
+	<js-module src="www/parse-push.js" name="parsePushPlugin">
 		<clobbers target="window.parsePush" />
 	</js-module>
 	
