@@ -10,6 +10,4 @@ var parsePushPlugin = {
 	}
 };
 
-alert("loaded parsePushPlugin");
-
 module.exports = parsePushPlugin;

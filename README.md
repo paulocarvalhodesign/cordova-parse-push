@@ -12,6 +12,19 @@ Based on [hazemhagrass/push-parse](https://github.com/hazemhagrass/push-parse) a
 cordova plugin add https://github.com/soundasleep/cordova-parse-push
 ```
 
+Then use the plugin once Cordova has completed loading everything:
+
+```
+document.addEventListener("deviceready", function() {
+	parsePushPlugin.initialize("testId", "testKey", 
+		function(success) { 
+			alert("success: " + success);
+		}, function(failure) {
+			alert("failure: " + failure);
+		});
+}, false);
+```
+
 ## Methods
 
 TODO none of these methods are implemented yet, but this is the intended interface:
