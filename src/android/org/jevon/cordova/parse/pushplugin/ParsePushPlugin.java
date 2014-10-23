@@ -6,6 +6,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 import com.parse.Parse;
+import com.parse.ParseInstallation;
 
 public class ParsePushPlugin extends CordovaPlugin {
 	
@@ -26,6 +27,10 @@ public class ParsePushPlugin extends CordovaPlugin {
 			String appId = args.getString(0);
 			String clientKey = args.getString(1);
 			Parse.initialize(cordova.getActivity(), appId, clientKey);
+			
+			// "Also, save the current installation to Parse"
+			ParseInstallation.getCurrentInstallation().saveInBackground();
+			
 			context.success();
 		} else {
 			context.error("Expected two arguments");
