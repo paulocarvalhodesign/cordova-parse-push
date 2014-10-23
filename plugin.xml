@@ -24,7 +24,7 @@
 			</feature>
 		</config-file>
 		
-		<source-file src="lib/parse/Parse-1.7.1.jar" target-dir="libs" framework="true" />
+		<source-file src="src/android/lib/parse/Parse-1.7.1.jar" target-dir="libs" framework="true" />
 		<source-file src="src/android/org/jevon/cordova/parse/pushplugin/ParsePushPlugin.java" target-dir="src/org/jevon/cordova/parse/pushplugin" />
 	</platform>
 	
