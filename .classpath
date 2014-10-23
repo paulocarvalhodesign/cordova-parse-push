@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="src/android"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="src" path="/Cordova"/>
+	<classpathentry kind="lib" path="lib/parse/Parse-1.7.1.jar" sourcepath="lib/parse/Parse-1.7.1-javadoc"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
