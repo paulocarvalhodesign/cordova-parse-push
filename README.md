@@ -31,6 +31,12 @@ document.addEventListener("deviceready", function() {
 }, false);
 ```
 
+Finally add the custom `ParsePushApplication` to your `AndroidManifest.xml`, so that push can be initialised as necessary:
+
+```
+  <application android:name="org.jevon.cordova.parse.pushplugin.ParsePushApplication" ... /> 
+```
+
 ## Methods
 
 TODO none of these methods are implemented yet, but this is the intended interface:
