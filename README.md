@@ -12,18 +12,11 @@ Based on [hazemhagrass/push-parse](https://github.com/hazemhagrass/push-parse) a
 plugin add https://github.com/soundasleep/cordova-parse-push --variable PARSE_APP_ID=abc123 --variable PARSE_CLIENT_SECRET=abc123
 ```
 
-Define your Parse AppId and SecretKey in your ``config.xml``:
-
-```
-	<preference name="PARSE_APP_ID" value="abc123" />
-	<preference name="PARSE_CLIENT_SECRET" value="abc123" />
-```
-
-Then use the plugin once Cordova has completed loading everything:
+Then use the plugin once Cordova has completed loading everything through `deviceready`:
 
 ```
 document.addEventListener("deviceready", function() {
-	parsePushPlugin.initialize(function(success) { 
+	parsePushPlugin.subscribe("myChannel", function(success) { 
 			alert("success: " + success);
 		}, function(failure) {
 			alert("failure: " + failure);
