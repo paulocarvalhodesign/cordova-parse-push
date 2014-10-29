@@ -9,7 +9,7 @@ Based on [hazemhagrass/push-parse](https://github.com/hazemhagrass/push-parse) a
 ## Installation
 
 ```
-cordova plugin add https://github.com/soundasleep/cordova-parse-push
+plugin add https://github.com/soundasleep/cordova-parse-push --variable PARSE_APP_ID=abc123 --variable PARSE_CLIENT_SECRET=abc123
 ```
 
 Define your Parse AppId and SecretKey in your ``config.xml``:
