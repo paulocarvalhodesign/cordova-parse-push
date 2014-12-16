@@ -24,12 +24,13 @@ document.addEventListener("deviceready", function() {
 }, false);
 ```
 
-Finally add the custom `ParsePushApplication` to your `AndroidManifest.xml`, 
-o that Parse can be initialised at application startup (necessary to register the push handler):
+Finally edit your `AndroidManifest.xml`, and add ```android:name``` to your existing ```<application>``` tag
 
 ```
   <application android:name="org.jevon.cordova.parse.pushplugin.ParsePushApplication" ... /> 
 ```
+This initialises Parse at application startup (necessary to register the push handler):
+
 
 ## Methods
 
